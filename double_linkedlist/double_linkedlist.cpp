@@ -51,8 +51,12 @@ void addNode() {
         if (previous != NULL) {
             previous->next = newNode;//step 7 make the next field of the previous
         }
-
+        else {
+            //if previous is still null,it means newnode is now the first node
+            START = newNode;
+        }
     }
+}
 
 
 int main() {

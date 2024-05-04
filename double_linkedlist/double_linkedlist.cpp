@@ -67,6 +67,7 @@ void addNode() {
     }
     return (*current != NULL);
 }
+void deleteNode()
 
 
 int main() {

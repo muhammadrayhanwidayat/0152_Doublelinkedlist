@@ -24,9 +24,12 @@ void addNode() {
         if (START != NULL && newNode->noMhs == START->noMhs) {
             cout << "\033[31mDuplicate roll numbers not allowed\033[on" << endl;
             return;
-
-
-    }
+        }
+        //if the list is empty, make the new node the start
+        newNode->next = START;  //step 3:make the new mode point to the first node
+        if (START != NULL) {
+            START->prev = newNode;//step 4 : make the first node point to the new node
+        }
 
 
 int main() {

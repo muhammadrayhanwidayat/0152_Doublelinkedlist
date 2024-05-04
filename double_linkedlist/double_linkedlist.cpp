@@ -42,6 +42,9 @@ void addNode() {
             previous = current;//stop 1.d:move the previous to the current node
             current = current->next;//step 1.e:move the current to the next node
         }
+        newNode->next = current; //step 4:make the next field of the new node point
+        newNode->prev = previous; //step 6:make the previous fiels of the prvious
+
 
     }
 
